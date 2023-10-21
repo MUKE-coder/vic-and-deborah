@@ -1,0 +1,12 @@
+// const fullName = prompt("What is your name?");
+const x = +prompt("Enter the Value of x");
+// const x = Number(prompt("Enter the Value of x"));
+// const x = parseFloat(prompt("Enter the Value of x"));
+// const x = parseInt(prompt("Enter the Value of x"));
+const y = 5;
+const z = y + x;
+// console.log(x);
+const message = "The value of z is " + z;
+console.log("------------------------");
+console.log(message);
+alert(message);

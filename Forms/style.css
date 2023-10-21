@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  background-color: gray;
+  width: 400px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-input input,
+select {
+  padding: 1rem 2rem;
+}
+.form-input input:focus {
+  border: 5px solid purple;
+  outline: none;
+}

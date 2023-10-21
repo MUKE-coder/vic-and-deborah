@@ -1,0 +1,49 @@
+:root {
+  --themeColor: brown;
+  --defaultFont: "DM Sans", sans-serif;
+  --secondaryFont: "DM Serif Display", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--defaultFont);
+}
+.section-heading {
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--themeColor);
+  font-family: var(--secondaryFont);
+}
+.welcome {
+  padding: 2rem 5rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+img {
+  width: 100%;
+}
+.card h6 {
+  font-size: 1.5rem;
+  color: var(--themeColor);
+  font-family: var(--secondaryFont);
+}
+.card p {
+  margin-bottom: 2rem;
+}
+.card a {
+  background-color: var(--themeColor);
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  color: white;
+  border-radius: 30px;
+}
+.card a:hover {
+  background-color: red;
+}

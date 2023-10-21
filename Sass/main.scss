@@ -1,0 +1,52 @@
+$themeColor: brown;
+$defaultFont: "DM Sans", sans-serif;
+$secondaryFont: "DM Serif Display", serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $defaultFont;
+}
+.section-heading {
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: $themeColor;
+  font-family: $secondaryFont;
+}
+.welcome {
+  padding: 2rem 5rem;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    .card {
+      img {
+        width: 100%;
+      }
+      h6 {
+        font-size: 1.5rem;
+        color: $themeColor;
+        font-family: $secondaryFont;
+      }
+      p {
+        margin-bottom: 2rem;
+        // transform: rotate(90deg);
+      }
+      a {
+        background-color: $themeColor;
+        text-decoration: none;
+        padding: 0.8rem 2rem;
+        color: white;
+        border-radius: 30px;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
